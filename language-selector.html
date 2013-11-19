@@ -1,0 +1,30 @@
+<html><head>
+<script>
+function switchLanguage(lang) {
+    if (window.location.href.substr(window.location.href.indexOf('/mobdev.ziptrek.com/') + 20).charAt(2) === '/' || window.location.href.substr(window.location.href.indexOf('/mobdev.ziptrek.com/') + 20).charAt(2) === '') {
+        window.location.href = "http://mobdev.ziptrek.com/" + lang + window.location.href.substr(window.location.href.indexOf('/mobdev.ziptrek.com/') + 22);
+
+    } else window.location.href = "http://mobdev.ziptrek.com/" + lang + window.location.href.substr(window.location.href.indexOf('/mobdev.ziptrek.com/') + 19);
+}
+</script>
+<style type="text/css" media="screen">@import "style.css";</style>
+</head>
+<body>
+<div tabindex='1' class='languageList languageFlags'>
+    <ul id='list' tabindex='2'>
+        <li> <a href='javascript:void(0);'><span onclick='javascript:document.getElementById("list").blur()' class='close flagSpan'><img src="http://mobdev.ziptrek.com/templates/mobile/img/close.png"/></span><img id='languageFlagsImage' src="http://mobdev.ziptrek.com/templates/mobile/img/flags/flags-sidebyside.png"/> </a>
+
+        </li>
+        <li> <a href='javascript:switchLanguage("zh");'><span class='flagSpan'>????</span><span> <img src="http://mobdev.ziptrek.com/templates/mobile/img/flags/chinese.jpg "/></span> </a>
+
+        </li>
+        <li> <a href='javascript:switchLanguage("fr");'><span class='flagSpan'>Français</span><span> <img src="http://mobdev.ziptrek.com/templates/mobile/img/flags/Quebec_flag.png"/></span></a>
+
+        </li>
+        <li> <a href='javascript:switchLanguage("en");'><span class='flagSpan'>English</span><span><img src="http://mobdev.ziptrek.com/templates/mobile/img/flags/uk-great-britain1.jpg"/></span></a>
+
+        </li>
+    </ul>
+</div>
+</body>
+</html>

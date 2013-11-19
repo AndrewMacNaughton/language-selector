@@ -1,0 +1,113 @@
+a, a:link, a:active, a:visited {
+	text-decoration: none;
+	color:#6ABB3C;
+}
+.languageFlags {
+    height: 20px;
+    top: 55px;
+    float: right;
+    right: 1%;
+    position:absolute;
+    -webkit-appearance:none;
+}
+#languageFlagsImage {
+    background-color: #FDECE0;
+    border-radius: 4px;
+    padding:5px 5px 3px 5px !important;
+}
+#home .languageFlags {
+    position:absolute;
+    top:0px;
+    z-index:100;
+    right: 5px;
+    margin-top:10px;
+}
+/*.showContent .languageFlags{
+	bottom:10px;
+}*/
+ #list {
+    color:#6ABB3C;
+    padding:5px;
+    /*border:1px solid #f9f9f9;*/
+    /*width:120px;*/
+    border-radius:0px;
+    list-style:none;
+    text-align:center;
+    border-radius:5px;
+    outline:none;
+    z-index:10;
+    position:relative;
+    font-family:Helvetica
+}
+.flagSpan {
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    padding-left: 10px;
+}
+.close {
+    display:none;
+    width:25px;
+    left:5px;
+}
+#list:focus> li span.close {
+    display:inline;
+}
+#list:active, #list:active li {
+    border:none;
+}
+#list li:first-child a {
+    border-radius:0px;
+}
+/*.languageList > ul {display:none;}*/
+ #list li {
+    list-style:none;
+    display:none;
+    padding-top:5px;
+    height:30px;
+    font-weight:bold;
+}
+#list li a:focus, #list li a:hover {
+    background:none;
+    color:#6ABB3C;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px
+}
+#list li:nth-child(1) {
+    display:block;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px
+}
+#list li:nth-child(1) img {
+    height:20px
+}
+#list li img {
+    height: 15px;
+    text-align: right;
+    position: absolute;
+    padding-left: 5px;
+    right: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+#list:focus {
+    width:250px;
+    height:250px;
+}
+#list:focus> li {
+    display:block;
+    background: #FDECE0;
+    border-top:1px solid #DDDDD9;
+    height:30px;
+}
+#list:focus> li:first-child {
+    display:block;
+    height:30px;
+    border:1px solid #DDDDD9;
+    border-bottom:none;
+}
+#list:focus> li:last-child {
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px
+}
